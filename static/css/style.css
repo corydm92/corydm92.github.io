@@ -1,0 +1,336 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* -------------------- */
+
+/* 
+
+Contents
+
+- CLASSES 
+
+- HEADER CSS STYLING 
+
+- MAIN CONTAINER CSS STYLING
+
+    - ABOUT SECTION
+    - PROJECT SECTION
+    - RESUME SECTION
+    - CONTACT SECTION
+
+- FOOTER CSS STYLING 
+
+
+Color Pallet:
+    Navy - #073C65
+    Midnight Blue - #205D83
+    Dark Slate Gray - #122D2A
+    Dark Sea Green - #B1C6C4
+    Medium Aquamarine - #76BBC5
+
+
+*/
+
+#colors {
+    color: #073C65;
+    color: #205D83;
+    color: #122D2A;
+    color: #B1C6C4;
+    color: #76BBC5;
+}
+
+
+
+/* -------------------- */
+
+
+
+/* CLASSES  */
+
+.section-head {
+    margin-top: 0;
+    padding-top: 12px;
+    font-style: italic;
+}
+
+button {
+    outline: none;
+}
+/* -------------------- */
+
+
+
+/* HEADER CSS STYLING */
+
+#header-container {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 72px auto;
+    grid-template-columns: auto 100px;
+    background-color: #073C65;
+    position: fixed;
+    box-shadow: 0 0 6px 0 black;
+}
+
+#menu-img {
+    padding: 0;
+    grid-row: 1;
+    grid-column: 2;
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-top: 12px;
+    margin-bottom: 11px;
+    margin-left: auto;
+    margin-right: 12px;
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0, 1.4, 1, 1);
+    filter: invert(100%);
+}
+
+#menu-img.clicked {
+    opacity: .5;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 12px 0;
+}
+
+#header-text {
+    font-size: 18px;
+    margin: 12px 0 6px;
+}
+
+h1, #header-text {
+    color: white;
+    margin-left: 12px;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#main-nav button {
+    font-size: 18px;
+    width: 70px;
+    border: 1px solid white;
+    padding: 6px;
+    font-size: 12px;
+    color: white;
+    background-color: transparent;
+}
+
+#nav-container {
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    height: 0;
+    overflow: hidden;
+    transition-property: height;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0, 1.4, 1, 1);
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+#nav-container.show {
+    height: 33px;
+}
+
+.hamburger {
+    filter: invert(100%);
+}
+
+/* -------------------- */
+
+
+
+/* MAIN CONTAINER STYLING */
+
+
+
+#main-container {
+
+} 
+
+p, h3 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.faux-divider {
+    border-bottom: 1px solid white; 
+    width: 75%;
+    margin: 0 auto 12px;
+    box-shadow: 0px 2px 12px .5px black;
+}
+
+
+
+/* -------------------- */
+
+/* ABOUT SECTION */
+
+#profile-pic {
+    width: 100%
+}
+
+#about-wrapper {
+    margin: 12px 12px 0 12px;
+    padding-bottom: 12px;
+    text-align: justify;
+}
+
+#about-wrapper h1 {
+    margin-left: 0;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+#left-portion {
+    height: auto;
+}
+
+#about-section {
+    padding-top: 84px;
+    background-color: #122D2A;
+    color: white;
+}
+
+#about-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#about-section li, #about-section h3, #about-wrapper2 {
+    text-align: center;
+}
+
+#about-wrapper2 {
+    margin-bottom: 12px;
+}
+
+
+
+/* -------------------- */
+
+
+
+
+/* PROJECT SECTION */
+
+#colors {
+    color: #073C65;
+    color: #205D83;
+    color: #122D2A;
+    color: #B1C6C4;
+    color: #76BBC5;
+}
+
+#project-link {
+    height: 84px;
+    padding-top: 84px;
+    margin-top: -84px;
+}
+
+#project-section {
+    background-color: #205d83;
+    color: white;
+    overflow: hidden;
+}
+
+#project-section p {
+    margin: 0 12px 12px;
+    text-align: center;
+}
+
+.work-pic {
+    width: 100%;
+    padding: 12px;
+}
+
+.section-head {
+    font-style: italic;
+}
+
+
+/* -------------------- */
+
+
+
+
+/* RESUME SECTION */
+
+#colors {
+    color: #073C65;
+    color: #205D83;
+    color: #122D2A;
+    color: #B1C6C4;
+    color: #76BBC5;
+}
+
+#resume-section {
+    height: 200px;
+    background-color: #76bbc5;
+    /* background-color: #122d2a; */
+    /* background-color: #073c65; */
+}
+
+
+
+
+/* -------------------- */
+
+
+
+
+/* CONTACT SECTION */
+
+#contact-section {
+    height: 200px;
+    background-color: #073c65;
+}
+
+
+
+/* -------------------- */
+
+
+
+
+/* FOOTER STYLING CSS */
+
+#footer {
+    background-color: black;
+}
+
+.social-img {
+    display: flex;
+    justify-content: center;
+}
+
+.social-img img {
+    filter: invert(100%);
+    margin: 12px;
+    width: 50px;
+    height: 50px;
+}
