@@ -68,6 +68,8 @@ Color Pallet:
     margin-top: 0;
     padding-top: 12px;
     font-style: italic;
+    text-align: center;
+    color: white;
 }
 
 button {
@@ -84,7 +86,8 @@ button {
     display: grid;
     grid-template-rows: 72px auto;
     grid-template-columns: auto 100px;
-    background-color: #073C65;
+    /* background-color: #073C65; */
+    background-image: linear-gradient(to left, #073C65, #205D83);
     position: fixed;
     box-shadow: 0 0 6px 0 black;
 }
@@ -121,7 +124,7 @@ h1 {
     margin: 12px 0 6px;
 }
 
-h1, #header-text {
+#header-container h1, #header-text {
     color: white;
     margin-left: 12px;
     grid-row: 1;
@@ -169,7 +172,7 @@ h1, #header-text {
 
 
 #main-container {
-
+    line-height: 1.5;
 } 
 
 p, h3 {
@@ -197,6 +200,9 @@ p, h3 {
 #about-wrapper {
     margin: 12px 12px 0 12px;
     padding-bottom: 12px;
+}
+
+#about-me {
     text-align: center;
 }
 
