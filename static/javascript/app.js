@@ -49,3 +49,27 @@ projectsLink.addEventListener('click', function(e) {
 
 });
 
+// Javascript to link to Resume in page
+let resumeLink = document.getElementById('resume-button')
+
+resumeLink.addEventListener('click', function(e) {
+    let projectElement = document.getElementById('resume-link');
+
+    projectElement.scrollIntoView(true);
+    
+    hamburger.click();
+
+});
+
+// Javascript to link to Contact in page
+let contactLink = document.getElementById('contact-button')
+
+contactLink.addEventListener('click', function(e) {
+    let projectElement = document.getElementById('contact-link');
+
+    projectElement.scrollIntoView(true);
+    
+    hamburger.click();
+
+});
+
