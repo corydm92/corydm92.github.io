@@ -6,6 +6,7 @@ let headerContainer = document.getElementById('header-container');
 
 let hamburger = document.querySelector(".hamburger");
 
+// Menu Icon Animation
 hamburger.addEventListener('click', function(e) {
 
     if (hamburger.classList.contains('unclicked')) {
@@ -24,6 +25,13 @@ hamburger.addEventListener('click', function(e) {
 
 });
 
+// Window Size Event Listener
+function windowSizeClicker() {
+    if (window.matchMedia("(min-width: 950px)").matches) {
+    } else {
+        hamburger.click();
+    };
+}
 
 // Javascript to link to About in page
 let aboutLink = document.getElementById('about-button')
@@ -33,8 +41,8 @@ aboutLink.addEventListener('click', function(e) {
 
     projectElement.scrollIntoView(true);
     
-    hamburger.click();
-
+    windowSizeClicker();
+    
 });
 
 // Javascript to link to Projects in page
@@ -45,7 +53,7 @@ projectsLink.addEventListener('click', function(e) {
 
     projectElement.scrollIntoView(true);
     
-    hamburger.click();
+    windowSizeClicker();
 
 });
 
@@ -57,7 +65,7 @@ resumeLink.addEventListener('click', function(e) {
 
     projectElement.scrollIntoView(true);
     
-    hamburger.click();
+    windowSizeClicker();
 
 });
 
@@ -69,7 +77,7 @@ contactLink.addEventListener('click', function(e) {
 
     projectElement.scrollIntoView(true);
     
-    hamburger.click();
+    windowSizeClicker();
 
 });
 

@@ -17,8 +17,8 @@
         
         <header class="center">
             
-            <div class="center" id="header-container">
-
+            <div class="center max-width" id="header-container">
+                
                 <div id="header-text-wrapper">
                     <div class="title">
                         <h1>Cory Morrissey</h1>
@@ -52,35 +52,40 @@
 
             <!-- About Section -->
             <section class="center" id="about-section">
-                    
-                <div id="left-portion">
-                    <img id="profile-pic" src="static/images/profile-pic.jpg">
-                </div>
-
-                <div id="right-portion">
-                    <div id="about-wrapper">    
-                        <h1 class="section-head">&lt;About/&gt;</h1>
-                        <p id="about-me">My name is Cory Morrissey, I was born in Kahului, Maui and moved to Hood River when I was six. I grew up here in the Pacific Northwest and fell in love with the area. I currently live in Portland, OR and I study at PDX Code Guild, working on finishing my full stack web development certification.</p>
-
-                        <ul id="about-ul" class="center">
-                            <h3>Languages</h3>
-                            <div class="faux-divider center"></div>
-                            <li>Python</li>
-                            <li>HTML / CSS</li>
-                            <li>Javascript</li>
-
-                            <h3>Frameworks</h3>
-                            <div class="faux-divider center"></div>
-                            <li>Bootstrap 4</li>
-                            <li>Vue.js</li>
-                            <li>Django</li>
-                        </ul>
-
-                        <p id="about-wrapper2">My hobbies include snowboarding, web technology, kiteboarding, and mountain biking.</p>
-
-                    </div>
-                </div>
                 
+                <div id="left-right-wrapper" class="center max-width">
+                    
+                    <div id="left-portion" class="max-width">
+                        <img id="profile-pic" src="static/images/profile-pic.jpg">
+                    </div>
+
+                    <div id="right-portion" class="max-width">
+                        <div id="about-wrapper">    
+                            <h1 class="section-head">&lt;About/&gt;</h1>
+                            <p id="about-me">My name is Cory Morrissey, I was born in Kahului, Maui and moved to Hood River when I was six. I grew up here in the Pacific Northwest and fell in love with the area. I currently live in Portland, OR and I study at PDX Code Guild, working on finishing my full stack web development certification.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="max-width center" id="about-info">
+                    <ul id="about-ul" class="center">
+                        <h3>Languages</h3>
+                        <div class="faux-divider center"></div>
+                        <li>Python</li>
+                        <li>HTML / CSS</li>
+                        <li>Javascript</li>
+
+                        <h3>Frameworks</h3>
+                        <div class="faux-divider center"></div>
+                        <li>Bootstrap 4</li>
+                        <li>Vue.js</li>
+                        <li>Django</li>
+                    </ul>
+
+                    <p id="about-wrapper2">My hobbies include snowboarding, web technology, digital audio, kiteboarding, and mountain biking.</p>
+
+                </div>
                 
             </section>
 
@@ -94,7 +99,7 @@
                     <h1 class="section-head">&lt;Projects/&gt;</h1>
                 </div>
 
-                <div class="work-pics-container center">    
+                <div class="work-pics-container center max-width">    
 
                     <div class="proj" id="mtg-project">
                         <a href="https://spectredesign.org/other-projects/lab10_any-api/index.html" target="_blank">
@@ -103,17 +108,17 @@
                         <p>With this project I used api.magicthegathering.io to pull card data, filter results, and link the images to tcgplayer.com</p>
                     </div>
 
-                    <div class="faux-divider center"></div>
+                    <div class="faux-divider center proj"></div>
 
                     <div class="proj" id="hackertyper">
-                    <a href="https://spectredesign.org/other-projects/lab07_hackertyper/index.html" target="_blank">
-                        <img class="work-pic center" src="static/images/hacker-900.jpeg">
+                    <a href="static/images/django-blog-full.PNG" target="_blank">
+                        <img class="work-pic center" src="static/images/django-blog-900.PNG">
                     </a>
-                    <p>This webpage takes snippets of an older project and prints code onto the screen using event listeners for any keypress in the &lt;html&gt; tag.</p>
+                    <p>This blog was made using Django and Bootstrap 4. It was made following lessons and tutorials found online.</p>
                     
                     </div>
 
-                    <div class="faux-divider center"></div>
+                    <div class="faux-divider center proj"></div>
 
                     <div class="proj" id="amazon-scraper">
                         <a href="static/images/amazon-scraper.PNG" target="_blank">
@@ -122,7 +127,7 @@
                         <p>This is a project used to scrape data from amazon using a library called BeautifulSoup.</p>
                     </div>
                     
-                    <div class="faux-divider center"></div>
+                    <div class="faux-divider center proj"></div>
 
                     <div class="proj" id="amazon-project">
                         <a href="static/images/amazon-project.PNG" target="_blank">
@@ -144,7 +149,7 @@
                 <h1 class="section-head">&lt;Resume/&gt;</h1>
                 
                 <div id="resume-container">
-                    <a href="static/other/Resume.pdf"><img id="resume-pic" src="static/images/Resume.jpg"></a>
+                    <a href="static/other/Resume.pdf" target="_blank"><img id="resume-pic" src="static/images/Resume.jpg"></a>
                 </div>
 
             </section>
