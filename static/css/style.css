@@ -471,6 +471,7 @@ p, h3 {
     }
 
     #left-portion {
+        padding: 0;
         grid-column: 1;
         margin-bottom: 12px;
     }
@@ -481,6 +482,7 @@ p, h3 {
 
     #right-portion {
         height: 337.5px;
+        width: 450px;
         grid-column: 2;
         background-color: rgba(248, 248, 255, 0.356);
         margin-top: 12px;
@@ -533,7 +535,7 @@ p, h3 {
         opacity: .5;
     }
 
-    #mtg-project, #hackertyper {
+    #mtg-project, #django-blog {
         margin-top: 24px;
     }
 
