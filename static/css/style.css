@@ -514,9 +514,10 @@ p, h3 {
         justify-content: center;
         flex-wrap: wrap;
         box-shadow: 0 0 30px -5px black;
-        background-color: #76bbc5;
-        background-color: #205d83;
-        background-image: linear-gradient(to top, #122D2A, #205D83);
+        /* background-color: #76bbc5;
+        background-color: #205d83; */
+        /* background-image: linear-gradient(to top, #122D2A, #205D83); */
+        background-color: rgba(0, 0, 0, 0.4);
         border-radius: 6px;
         margin-bottom: 24px;
     }
