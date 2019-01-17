@@ -455,17 +455,16 @@ p, h3 {
         margin-top: 24px;
         grid-row: 1;
         display: grid;
-        grid-template-columns: 450px auto; 
+        grid-template-columns: 475px 475px; 
         margin-left: auto;
         margin-right: auto;
-        padding-left: 12px;
-        padding-right: 12px;
         margin-bottom: 24px;
         box-shadow: 0 0 30px -5px black;
         background-color: #76bbc5;
         background-color: #205d83;
         background-image: linear-gradient(to right, #073C65, #205D83);
         border-radius: 6px;
+        width: 950px;
     }
 
     #left-portion {
@@ -520,6 +519,7 @@ p, h3 {
         background-color: rgba(0, 0, 0, 0.4);
         border-radius: 6px;
         margin-bottom: 24px;
+        padding: 0;
     }
 
     .work-pic {
