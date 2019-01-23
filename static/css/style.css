@@ -404,7 +404,17 @@ p, h3 {
 
 @media screen and (min-width: 950px) {
 
+    
+
     /* HEADER SECTION */
+
+    #menu-img {
+        display: none;
+    }
+
+    #nav-container {
+        display: inline-block;
+    }
 
     .max-width {
         max-width: 950px;
@@ -427,16 +437,20 @@ p, h3 {
         transition-property: opacity;
         transition-duration: 500ms;
         transition-timing-function: none;
-        opacity: 0;
+        /* opacity: 0; */
         margin: 0;
         margin-left: auto;
-        margin-right: 72px;
+        margin-right: 12px;
         margin-top: 28.5px;
         margin-bottom: 28.5px;
     }
 
     #nav-container.show {
         opacity: 1;
+    }
+
+    #main-nav button {
+        margin-left: 6px;
     }
 
     #menu-img {

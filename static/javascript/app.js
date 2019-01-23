@@ -58,16 +58,16 @@ projectsLink.addEventListener('click', function(e) {
 });
 
 // Javascript to link to Resume in page
-let resumeLink = document.getElementById('resume-button')
+// let resumeLink = document.getElementById('resume-button')
 
-resumeLink.addEventListener('click', function(e) {
-    let projectElement = document.getElementById('resume-link');
+// resumeLink.addEventListener('click', function(e) {
+//     let projectElement = document.getElementById('resume-link');
 
-    projectElement.scrollIntoView(true);
+//     projectElement.scrollIntoView(true);
     
-    windowSizeClicker();
+//     windowSizeClicker();
 
-});
+// });
 
 // Javascript to link to Contact in page
 let contactLink = document.getElementById('contact-button')
