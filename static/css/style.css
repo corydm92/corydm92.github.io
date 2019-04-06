@@ -210,7 +210,7 @@ p, h3 {
 }
 
 #about-me {
-    text-align: center;
+    text-align: left;
 }
 
 #about-wrapper h1 {
@@ -235,7 +235,7 @@ p, h3 {
     margin: 0;
 }
 
-#about-section li, #about-section h3, #about-wrapper2 {
+#about-section li, #about-section h3 {
     text-align: center;
 }
 
@@ -246,9 +246,35 @@ p, h3 {
 #about-wrapper2 {
     margin: 48px 12px 0px;
     padding-bottom: 24px;
+    text-align: left;
 }
 
 /* -------------------- */
+
+/* CAREER SECTION */
+
+#career-section {
+    background-color: #073c65;
+    color: white;
+    overflow: hidden;
+}
+
+#career-section h1 {
+    margin-bottom: 0;
+}
+
+#career-section p {
+    margin: 0 12px 12px;
+    text-align: left;
+}
+
+#career-link {
+    height: 84px;
+    padding-top: 84px;
+    margin-top: -84px;
+}
+
+
 
 /* PROJECT SECTION */
 
@@ -269,8 +295,8 @@ p, h3 {
 }
 
 #project-section p {
-    margin: 0 12px 12px;
-    text-align: center;
+    margin: 0 12px 24px;
+    text-align: left;
 }
 
 .work-pics-container {
@@ -354,7 +380,7 @@ p, h3 {
 #contact-section h4 {
     margin: 12px;
     color: orange;
-    font-size: 24px;
+    font-size: 1.4em;
 }
 
 #contact-section p {
@@ -466,7 +492,7 @@ p, h3 {
     }
 
     #about-wrapper p {
-        text-align: justify
+        text-align: justify;
     }
 
     #left-right-wrapper {
@@ -513,6 +539,24 @@ p, h3 {
 
     #about-info {
         grid-row: 2;
+    }
+
+    /* career SECTION */
+
+    #career-section h1 {
+        margin-bottom: 24px;
+    }
+
+    .work-pics-container.career {
+        padding: 24px;
+    }
+
+    #chupt-text {
+        margin: auto;
+    }
+
+    #career-section .work-pics-container {
+        justify-content: space-evenly;
     }
 
     /* PROJECT SECTION */
