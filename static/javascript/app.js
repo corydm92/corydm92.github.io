@@ -1,60 +1,56 @@
 // let menuButton = document.getElementById('menu-img');
 
-let navContainer = document.getElementById('nav-container')
+let navContainer = document.getElementById("nav-container");
 
-let headerContainer = document.getElementById('header-container');
+let headerContainer = document.getElementById("header-container");
 
 let hamburger = document.querySelector(".hamburger");
 
 // Menu Icon Animation
-hamburger.addEventListener('click', function(e) {
+hamburger.addEventListener("click", function(e) {
+	if (hamburger.classList.contains("unclicked")) {
+		hamburger.classList.toggle("is-active");
+		hamburger.classList.remove("unclicked");
+		hamburger.classList.add("clicked");
 
-    if (hamburger.classList.contains('unclicked')) {
-        hamburger.classList.toggle("is-active");
-        hamburger.classList.remove('unclicked');
-        hamburger.classList.add('clicked');
+		navContainer.classList.add("show");
+	} else {
+		hamburger.classList.toggle("is-active");
+		hamburger.classList.remove("clicked");
+		hamburger.classList.add("unclicked");
 
-        navContainer.classList.add('show');
-    } else {
-        hamburger.classList.toggle("is-active");
-        hamburger.classList.remove('clicked');
-        hamburger.classList.add('unclicked');
-
-        navContainer.classList.remove('show');
-    }
-
+		navContainer.classList.remove("show");
+	}
 });
 
 // Window Size Event Listener
 function windowSizeClicker() {
-    if (window.matchMedia("(min-width: 950px)").matches) {
-    } else {
-        hamburger.click();
-    };
+	if (window.matchMedia("(min-width: 950px)").matches) {
+	} else {
+		hamburger.click();
+	}
 }
 
 // Javascript to link to About in page
-let aboutLink = document.getElementById('about-button')
+let aboutLink = document.getElementById("about-button");
 
-aboutLink.addEventListener('click', function(e) {
-    let projectElement = document.getElementById('about-section');
+aboutLink.addEventListener("click", function(e) {
+	let projectElement = document.getElementById("about-section");
 
-    projectElement.scrollIntoView(true);
-    
-    windowSizeClicker();
-    
+	projectElement.scrollIntoView(true);
+
+	windowSizeClicker();
 });
 
 // Javascript to link to Projects in page
-let projectsLink = document.getElementById('project-button')
+let projectsLink = document.getElementById("project-button");
 
-projectsLink.addEventListener('click', function(e) {
-    let projectElement = document.getElementById('project-link');
+projectsLink.addEventListener("click", function(e) {
+	let projectElement = document.getElementById("project-link");
 
-    projectElement.scrollIntoView(true);
-    
-    windowSizeClicker();
+	projectElement.scrollIntoView(true);
 
+	windowSizeClicker();
 });
 
 // Javascript to link to Resume in page
@@ -64,20 +60,18 @@ projectsLink.addEventListener('click', function(e) {
 //     let projectElement = document.getElementById('resume-link');
 
 //     projectElement.scrollIntoView(true);
-    
+
 //     windowSizeClicker();
 
 // });
 
 // Javascript to link to Contact in page
-let contactLink = document.getElementById('contact-button')
+let contactLink = document.getElementById("contact-button");
 
-contactLink.addEventListener('click', function(e) {
-    let projectElement = document.getElementById('contact-link');
+contactLink.addEventListener("click", function(e) {
+	let projectElement = document.getElementById("contact-link");
 
-    projectElement.scrollIntoView(true);
-    
-    windowSizeClicker();
+	projectElement.scrollIntoView(true);
 
+	windowSizeClicker();
 });
-
